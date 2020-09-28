@@ -496,7 +496,7 @@ class TestLinePayApi(unittest.TestCase):
             mock_api_result = MagicMock(return_value={"returnCode": "0000"})
             post.return_value.json = mock_api_result
             transaction_id = 1234567890
-            amount = 10.0
+            amount = 10
             expected_path = "/v3/payments/{}/refund".format(
                 transaction_id
             )
